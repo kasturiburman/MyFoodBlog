@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico"> -->
+
+    <title>Food Blogger's Paradise: Gallery</title>
+
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/blog/"> -->
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet"> -->
+    <link href="css/blog.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a class="text-muted" href="#">Subscribe</a>
+                </div>
+                <div class="col-4 text-center justify-content-between align-items-center">
+                    <a class="blog-header-logo text-dark" href="#">Food Blogger's Paradise</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a class="text-muted" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
+                    </a>
+                    <!-- <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a> -->
+                </div>
+            </div>
+        </header>
+
+
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <!-- navbar-expand-sm means it is a collapsable navigation bar when screen size is reduced; fixed-top means that the navigation bar will always be fixed at the top of the screen even when you are scrolling -->
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand mr-auto" href="#"><img src="img/cartoon-meat.png" height="41" width="41"></a>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <!-- mr-auto means the contents will be shifted as left as possible with maximum right margin -->
+                        <li class="nav-itms"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="nav-itms"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                        <li class="nav-itms"><a class="nav-link active" href="#"><span class="fa fa-th-list fa-lg"></span> Gallery</a></li>
+                        <li class="nav-itms"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a id="LoginBtn">
+                            <span class="fa fa-sign-in"></span>Login
+                    </a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="row">
+                <ol class="col-12 breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Gallery</li>
+                </ol>
+                <div class="col-12">
+                    <h3>Gallery</h3>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                    <!-- for extra small screen sizes it will occupy the entire row; for small screen sizes it will occupy 4 columns; for medium to extra large it will occupy 3 columns -->
+                    <h3>Our Lipsmacking Culinary Creations of the Month - click to Subscribe!!!</h3>
+                </div>
+                <div class="col col-sm order-sm-first col-md">
+                    <!-- it will be stacked below the above div in extra small screen sizes; it will occupy the remaining 8 columns in small screen size; it will occupy the remaining 9 columns in medium to extra large screen size-->
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/dessert.png" alt="uthapizza">
+                        <div class="media-body">
+                            <h2 class="mt-0">I'm still Hungry <span class="badge badge-danger">HOT</span></h2>
+                            <p>At long last, Masterchef contestant Reynold Poernomo opens up hotly anticipated Koi Dessert Bar in Chippendale. Go visit to enjoy all the creative delicacies NOW. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-4 order-sm-first col-md-3">
+                    <h3>This Month's Promotions</h3>
+                </div>
+                <div class="col col-sm order-sm-last col-md">
+                    <div class="media">
+                        <div class="media-body">
+                            <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span> <span class="badge badge-pill badge-secondary">$19.99</span></h2>
+                            <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person at <b>Sylvia's</b>                                </p>
+                        </div>
+                        <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                    <h3>Meet our Culinary Specialists</h3>
+                </div>
+                <div class="col col-sm order-sm-first col-md">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="alberto">
+                        <div class="media-body">
+                            <h2>Alberto Somayya</h2>
+                            <h4>Executive Chef</h4>
+                            <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-4 order-sm-first col-md-3">
+                    <h3>Our selected Home-Cooked Recipe of the Month</h3>
+                </div>
+                <div class="col col-sm order-sm-last col-md">
+                    <div class="media">
+                        <div class="media-body">
+                            <h2 class="mt-0">Rustic Multigrain Cookies</h2>
+                            <h4>Taniya Jackson</h4>
+                            <p>A stay-at-home mom cooks healthy, nutritious dishes for her 6 year old son - Click to find out more!! </p>
+                        </div>
+                        <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/homecooked.png" alt="homecooked">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- /.container -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <!-- for extra small screen sizes it will occupy 4 columns; for small to extra large screen sizes it will occupy 2 columns; offset of 1 column from extra small to extra large -->
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              121, Clear Water Bay Road<br>
+		              Clear Water Bay, Kowloon<br>
+		              NEY YORK<br>
+		              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+		              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <!-- it will occupy just enough columns that is required -->
+                    <p>© Copyright 2021 Food-Bloggers' Paradise</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <!-- <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script> -->
+    <!-- <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script> -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- <script>
+        Holder.addTheme('thumb', {
+            bg: '#55595c',
+            fg: '#eceeef',
+            text: 'Thumbnail'
+        });
+    </script> -->
+</body>
+
+</html>
